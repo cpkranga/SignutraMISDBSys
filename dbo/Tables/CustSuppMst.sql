@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[CustSuppMst] (
+    [CompanyNo]              INT            NOT NULL,
+    [CustSuppNo]             INT            NOT NULL,
+    [CustSuppTypeCode]       VARCHAR (1)    NOT NULL,
+    [CustSuppName]           VARCHAR (100)  NOT NULL,
+    [CustSuppGroupNo]        INT            NULL,
+    [CustomerTypeNo]         INT            NULL,
+    [InvoiceTypeNo]          INT            NULL,
+    [CustSuppAdd1]           VARCHAR (50)   NULL,
+    [CustSuppAdd2]           VARCHAR (50)   NULL,
+    [CustDelivaryAdd]        VARCHAR (100)  NULL,
+    [CustSuppEmail]          VARCHAR (50)   NULL,
+    [CustSuppTel]            VARCHAR (50)   NULL,
+    [IsActive]               TINYINT        NULL,
+    [CustDiscountNo]         INT            NULL,
+    [CrLimit]                DECIMAL (9, 2) NULL,
+    [CrDays]                 INT            NULL,
+    [TotalDueAmt]            DECIMAL (9, 2) NULL,
+    [TinNo]                  VARCHAR (20)   NULL,
+    [IsBlockCustIfExedCrLtd] TINYINT        NULL,
+    [BlockCustIfExedCrDays]  TINYINT        NULL,
+    [SalesManNo]             INT            NULL,
+    CONSTRAINT [PK_CustSuppMst] PRIMARY KEY CLUSTERED ([CompanyNo] ASC, [CustSuppNo] ASC)
+);
+
